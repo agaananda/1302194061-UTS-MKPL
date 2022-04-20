@@ -43,10 +43,6 @@ private enum jenisgender {
 		this.lastName = lastName;
 		this.idNumber = idNumber;
 		this.address = address;
-		this.yearJoined = yearJoined;
-		this.monthJoined = monthJoined;
-		this.dayJoined = dayJoined;
-		this.isForeigner = isForeigner;
 		this.gender = gender;
 		
 		childNames = new LinkedList<String>();
