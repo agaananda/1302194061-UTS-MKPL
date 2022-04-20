@@ -102,6 +102,7 @@ private enum jenisgender {
 	public string SizeChild(){
 		return child.size();
 	}
+}
 	
 	/**
 	 * Fungsi untuk menentukan gaji bulanan pegawai berdasarkan grade kepegawaiannya (grade 1: 3.000.000 per bulan, grade 2: 5.000.000 per bulan, grade 3: 7.000.000 per bulan)
