@@ -6,7 +6,9 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class Employee {
-
+private enum jenisgender {
+		Perempuan, Laki-Laki,
+	}
 	//data employee
 	private String employeeId;
 	private String firstName;
@@ -16,11 +18,9 @@ public class Employee {
 	
 	
 	private boolean isForeigner;
-	private boolean gender; //true = Laki-laki, false = Perempuan
+	private jenisgender  gender; //true = Laki-laki, false = Perempuan
 	
-	private enum gender {
-		Perempuan, Laki-Laki,
-	}
+	
 	
 	private String spouseName;
 	private String spouseIdNumber;
@@ -28,7 +28,7 @@ public class Employee {
 	private List<String> childNames;
 	private List<String> childIdNumbers;
 	
-	public Employee(String employeeId, String firstName, String lastName, String idNumber, String address, int yearJoined, int monthJoined, int dayJoined, boolean isForeigner, boolean gender) {
+	public Employee(String employeeId, String firstName, String lastName, String idNumber, String address, int yearJoined, int monthJoined, int dayJoined, boolean isForeigner, jenisgender gender) {
 		this.employeeId = employeeId;
 		this.firstName = firstName;
 		this.lastName = lastName;
