@@ -52,10 +52,63 @@ private enum jenisgender {
 		childIdNumbers = new LinkedList<String>();
 	}
 	
+	public void setEmployeeId(String employeeId) {
+		this.employeeId = employeeId;
+	}
+
+	public String getEmployeeId() {
+		return employeeId;
+	}
+
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
+
+	public String getFirstName() {
+		return firstName;
+	}
+
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
+	}
+
+	public String getLastName() {
+		return lastName;
+	}
+
+	public void setIdNumber(String idNumber) {
+		this.idNumber = idNumber;
+	}
+
+	public String getIdNumber() {
+		return idNumber;
+	}
+
+	public void setAddress(String address) {
+		this.address = address;
+	}
+
+	public String getAddress() {
+		return address;
+	}
+	public boolean isForeigner() {
+		return isForeigner;
+	}
+
+	public jenisgender gender() {
+		return gender;
+	}
+
+	public string SizeChild(){
+		return child.size();
+	}
+	
 	/**
 	 * Fungsi untuk menentukan gaji bulanan pegawai berdasarkan grade kepegawaiannya (grade 1: 3.000.000 per bulan, grade 2: 5.000.000 per bulan, grade 3: 7.000.000 per bulan)
 	 * Jika pegawai adalah warga negara asing gaji bulanan diperbesar sebanyak 50%
 	 */
+
+	
 	
 	public void setMonthlySalary(int grade) {	
 		if (grade == 1) {
